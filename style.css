@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none; /* For older WebKit browsers (Safari, Chrome) */
+    -moz-user-select: none;    /* For older Firefox browsers */
+    -ms-user-select: none;
+    scrollbar-width: none;
+    transition: .25s;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+}
+
+#interesting_main a:hover{
+    transform: scale(1.05);
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRU E-Books</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/crulogo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="flex flex-col h-[100vh]">
+    <nav class="fixed w-[100%] z-20">
+        <div class="flex justify-between items-center bg-orange-400 p-3 z-30">
+            <div class="flex justify-center items-center gap-2">
+                <img class="w-[50px] h-[55px]" src="images/crulogo.png" alt="">
+                <h1 class="text-white font-bold text-2xl">E-Books</h1>
+            </div>
+            <div class="hidden md:flex text-white justify-center items-center gap-4">
+                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='home'></box-icon>หน้าหลัก</a>
+                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='test-tube'></box-icon>คลังหนังสือ</a>
+                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='spreadsheet'></box-icon>ชีทสรุปสอบ</a>
+                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='book-content'></box-icon>สรุปเนื้อหา</a>
+            </div>
+            <div id="nav-button" class="block md:hidden text-white flex justify-center items-center gap-5">
+                <box-icon color="white" size="30px" name='menu'></box-icon>
+            </div>
+        </div>
+        <div id="nav-toggle" class="absolute w-[100%] bg-orange-400 -top-[300px] -z-10">
+            <div class="p-3">
+                <div class="flex flex-col justify-center items-center text-white">
+                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='home'></box-icon>หน้าหลัก</a>
+                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='test-tube'></box-icon>คลังหนังสือ</a>
+                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='spreadsheet'></box-icon>ชีทสรุปสอบ</a>
+                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='book-content'></box-icon>สรุปเนื้อหา</a>
+                </div>
+                <div class="flex justify-start items-center gap-2 mt-5 ml-2">
+                    <a href=""><box-icon color="white" size="30px" type='logo' name='instagram-alt'></box-icon></a>
+                    <a href=""><box-icon color="white" size="30px" type='logo' name='facebook-circle'></box-icon></a>
+                    <a href=""><box-icon color="white" size="30px" type='solid' name='phone-call'></box-icon></a>
+                    <a href=""><box-icon color="white" size="30px" type='logo' name='github'></box-icon></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="mt-30 ml-3 mr-3 lg:ml-40 lg:mr-40">
+        <div class="swiper main-swiper max-w-[100%] max-h-[300px]">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide" src="./images/Banners/Math.png" alt="">
+                <img class="swiper-slide" src="./images/Banners/Science.png" alt="">
+                <img class="swiper-slide" src="./images/Banners/Social.png" alt="">
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="autoplay"></div>
+        </div>
+
+        <div class="flex flex-col justify-center md:flex-row md:gap-10">
+            <!-- Interesting Topics -->
+            <div class="mt-10 shadow-[0px_0px_3px_2px_rgba(0,_0,_0,_0.1)] p-5 rounded-[10px] md:w-[50%]">
+                <div class="mb-2 flex items-center gap-10 w-[100%] justify-between">
+                    <h1 class="font-bold text-2xl">เรื่องน่าอ่าน</h1>
+                    <a class="text-blue-400" href="#">ดูทั้งหมด ></a>
+                </div>
+                <div class="bg-orange-400 w-[100%] h-[4px] mb-7"></div>
+                <div class="swiper interestings-swiper">
+                    <div id="interesting_main" class="swiper-wrapper p-1"></div>
+                </div>
+            </div>
+
+            <!-- New Topics -->
+            <div class="mt-10 shadow-[0px_0px_3px_2px_rgba(0,_0,_0,_0.1)] p-5 rounded-[10px] md:w-[50%]">
+                <div class="mb-2 flex items-center gap-10 w-[100%] justify-between">
+                    <h1 class="font-bold text-2xl">เรื่องใหม่ๆ</h1>
+                    <a class="text-blue-400" href="#">ดูทั้งหมด ></a>
+                </div>
+                <div class="bg-orange-400 w-[100%] h-[4px] mb-7"></div>
+                <div class="swiper interestings-swiper">
+                    <div id="newcomes_main" class="swiper-wrapper p-1">
+                        <div class="swiper-slide flex flex-col rounded-[7px] overflow-hidden bg-white shadow-[0px_0px_3px_2px_rgba(0,_0,_0,_0.1)] max-w-[150px] h-[200px]">
+                            <div class="relative">
+                                <h1 class="bg-red-400 text-white inline-block absolute pl-1 pr-1">NEW</h1>
+                                <img class="w-[100%] h-[75px]" src="images/placeholder.png" alt="">
+                            </div>
+                            <div class="flex flex-col ml-2 mr-1 mt-1">
+                                <h1 class="font-bold">Title</h1>
+                                <h1 class="text-[14px]">E-Book descriptions and informations</h1>
+                                <h1 class="text-[14px] text-blue-400">Subject (S12345)</h1>
+                                <a class="bg-orange-400 p-1 rounded-[5px] text-center max-w-[75px] mt-2 mb-2" href="#">อ่าน</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-[100%] bg-orange-400 mt-24">
+        <div class="flex flex-col pl-5 pr-5 pt-10 pb-15 text-white lg:ml-36 lg:mr-36">
+            <div class="flex justify-between items-center">
+                <div class="flex flex-col gap-1">
+                    <div class="flex justify-start items-center gap-2 mb-2">
+                        <img class="w-[50px] h-[55px]" src="images/crulogo.png" alt="">
+                        <h1 class="text-white font-bold text-2xl">E-Books</h1>
+                    </div>
+                    <h1>> Copyright ©️ 2025-2026 SYBAU™️</h1>
+                    <h1>> โครงงานนี้เป็นส่วนหนึ่งของวิชาคอมพิวเตอร์โรงเรียนชลราษฎรอำรุง</h1>
+                    <h1>> Tel. 084-090-3336 (เติ้ล)</h1>
+                </div>
+                <div class="flex flex-col mt-2 items-center gap-1 pl-16">
+                    <a href=""><box-icon color="white" size="24px" type='logo' name='instagram-alt'></box-icon></a>
+                    <a href=""><box-icon color="white" size="24px" type='logo' name='facebook-circle'></box-icon></a>
+                    <a href=""><box-icon color="white" size="24px" type='logo' name='gmail'></box-icon></a>
+                    <a href=""><box-icon color="white" size="24px" type='logo' name='github'></box-icon></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="scripts/utils/interestings.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/swipers/swiper.js"></script>
+</body>
+</html>
