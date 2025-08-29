@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRU E-Books - หน้าหลัก</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/crulogo.png">
+    <title>CRU E-Books - หนังสือทั้งหมด</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/png" href="../../images/crulogo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,13 +17,13 @@
     <nav class="fixed w-[100%] z-20">
         <div class="flex justify-between items-center bg-orange-400 p-3 z-30">
             <div class="flex justify-center items-center gap-2">
-                <img class="w-[50px] h-[55px]" src="images/crulogo.png" alt="">
+                <img class="w-[50px] h-[55px]" src="../../images/crulogo.png" alt="">
                 <h1 class="text-white font-bold text-2xl">E-Books</h1>
             </div>
             <div class="hidden md:flex text-white justify-center items-center gap-4">
-                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="#"><box-icon color="white" size="27px" name='home'></box-icon>หน้าหลัก</a>
-                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="pages/main/books.html"><box-icon color="white" size="27px" name='test-tube'></box-icon>คลังหนังสือ</a>
-                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='spreadsheet'></box-icon>ชีทสรุปสอบ</a>
+                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="../../index.html"><box-icon color="white" size="27px" name='home'></box-icon>หน้าหลัก</a>
+                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="#"><box-icon color="white" size="27px" name='test-tube'></box-icon>คลังหนังสือ</a>
+                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='spreadsheet'></box-icon>เตรียมสอบ</a>
                 <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='book-content'></box-icon>สรุปเนื้อหา</a>
             </div>
             <div id="nav-button" class="block md:hidden text-white flex justify-center items-center gap-5">
@@ -33,9 +33,9 @@
         <div id="nav-toggle" class="absolute w-[100%] bg-orange-400 -top-[300px] -z-10">
             <div class="p-3">
                 <div class="flex flex-col justify-center items-center text-white">
-                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="#"><box-icon color="white" size="27px" name='home'></box-icon>หน้าหลัก</a>
-                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="pages/main/books.html"><box-icon color="white" size="27px" name='test-tube'></box-icon>คลังหนังสือ</a>
-                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='spreadsheet'></box-icon>ชีทสรุปสอบ</a>
+                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="../../index.html"><box-icon color="white" size="27px" name='home'></box-icon>หน้าหลัก</a>
+                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="#"><box-icon color="white" size="27px" name='test-tube'></box-icon>คลังหนังสือ</a>
+                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='spreadsheet'></box-icon>เตรียมสอบ</a>
                     <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href=""><box-icon color="white" size="27px" name='book-content'></box-icon>สรุปเนื้อหา</a>
                 </div>
                 <div class="flex justify-start items-center gap-2 mt-5 ml-2">
@@ -47,41 +47,17 @@
             </div>
         </div>
     </nav>
-    <main class="mt-30 ml-3 mr-3 lg:ml-40 lg:mr-40">
-        <div class="swiper main-swiper max-w-[100%] max-h-[300px] rounded-[10px] overflow-hidden">
-            <div class="swiper-wrapper">
-                <img class="swiper-slide" src="./images/Banners/Math.png" alt="">
-                <img class="swiper-slide" src="./images/Banners/Science.png" alt="">
-                <img class="swiper-slide" src="./images/Banners/Social.png" alt="">
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="autoplay"></div>
+    <main class="mt-30 ml-3 mr-3 lg:ml-64 lg:mr-64">
+        <div>
+            <h1 class="font-bold text-3xl mb-5">คณิตศาสตร์</h1>
+            <div class="bg-orange-400 w-[100%] h-[4px] mb-7"></div>
+            <div id="math_div" class="all-books flex flex-wrap gap-3 justify-start items-center"></div>
         </div>
 
-        <div class="flex flex-col justify-center md:flex-row md:gap-10 md:ml-6 md:mr-6">
-            <!-- Interesting Topics -->
-            <div class="mt-10 shadow-[0px_0px_3px_2px_rgba(0,_0,_0,_0.1)] p-5 rounded-[10px] md:w-[50%]">
-                <div class="mb-2 flex items-center gap-10 w-[100%] justify-between">
-                    <h1 class="font-bold text-2xl">เรื่องน่าอ่าน</h1>
-                    <a class="text-blue-400" href="pages/main/books.html">ดูทั้งหมด ></a>
-                </div>
-                <div class="bg-orange-400 w-[100%] h-[4px] mb-7"></div>
-                <div class="swiper interestings-swiper">
-                    <div id="interesting_main" class="swiper-wrapper p-1"></div>
-                </div>
-            </div>
-
-            <!-- New Topics -->
-            <div class="mt-10 shadow-[0px_0px_3px_2px_rgba(0,_0,_0,_0.1)] p-5 rounded-[10px] md:w-[50%]">
-                <div class="mb-2 flex items-center gap-10 w-[100%] justify-between">
-                    <h1 class="font-bold text-2xl">เรื่องใหม่ๆ</h1>
-                    <a class="text-blue-400" href="pages/main/books.html">ดูทั้งหมด ></a>
-                </div>
-                <div class="bg-orange-400 w-[100%] h-[4px] mb-7"></div>
-                <div class="swiper news-swiper">
-                    <div id="newcomes_main" class="swiper-wrapper p-1"></div>
-                </div>
-            </div>
+        <div class="mt-24">
+            <h1 class="font-bold text-3xl mb-5">วิทยาศาสตร์</h1>
+            <div class="bg-orange-400 w-[100%] h-[4px] mb-7"></div>
+            <div id="sci_div" class="all-books flex flex-wrap gap-3 justify-start items-center"></div>
         </div>
     </main>
 
@@ -90,7 +66,7 @@
             <div class="flex justify-between items-center">
                 <div class="flex flex-col gap-1">
                     <div class="flex justify-start items-center gap-2 mb-2">
-                        <img class="w-[50px] h-[55px]" src="images/crulogo.png" alt="">
+                        <img class="w-[50px] h-[55px]" src="../../images/crulogo.png" alt="">
                         <h1 class="text-white font-bold text-2xl">E-Books</h1>
                     </div>
                     <h1>> Copyright ©️ 2025-2026 SYBAU™️</h1>
@@ -108,9 +84,8 @@
     </footer>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="scripts/utils/interestings.js"></script>
-    <script src="scripts/utils/new_topics.js"></script>
-    <script src="scripts/index.js"></script>
+    <script src="../../scripts/index.js"></script>
+    <script src="../../scripts/utils/all_books.js"></script>
     <script src="scripts/swipers/swiper.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const datas = [
+const new_topics_data = [
     {
         title: "ตรรกศาสตร์",
         description: "คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 4",
@@ -36,7 +36,7 @@ const datas = [
     },
 ]
 
-function addNewCard(container, { title, description, subject_code, image_path, redirect_path }) {
+function addNewTopicsCard(container, { title, description, subject_code, image_path, redirect_path }) {
     const main_div = document.createElement("div");
     main_div.classList.add(
         "swiper-slide",
@@ -51,10 +51,16 @@ function addNewCard(container, { title, description, subject_code, image_path, r
     );
 
     // image part
+
     const image_div = document.createElement("div");
+    image_div.classList.add("relative");
     const image = document.createElement("img");
     image.classList.add("w-[100%]", "h-[75px]");
     image.src = image_path;
+    const new_text = document.createElement("h1");
+    new_text.classList.add("bg-red-400","text-white","inline-block","absolute","pl-1","pr-1");
+    new_text.innerText = "NEW";
+    image_div.appendChild(new_text);
     image_div.appendChild(image);
 
     // bottom part
@@ -90,11 +96,11 @@ function addNewCard(container, { title, description, subject_code, image_path, r
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-    const main = document.getElementById("interesting_main");
+    const main = document.getElementById("newcomes_main");
 
-    datas.forEach(data => addNewCard(main, data));
+    new_topics_data.forEach(data => addNewTopicsCard(main, data));
 
-    const swiper = new Swiper('.interestings-swiper', {
+    const swiper = new Swiper('.news-swiper', {
         direction: 'horizontal',
         slidesPerView: 'auto',
         spaceBetween: 15,

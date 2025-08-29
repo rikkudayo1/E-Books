@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
     user-select: none;
-    -webkit-user-select: none; /* For older WebKit browsers (Safari, Chrome) */
-    -moz-user-select: none;    /* For older Firefox browsers */
+    -webkit-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
     scrollbar-width: none;
     transition: .25s;
@@ -10,6 +10,6 @@
     font-style: normal;
 }
 
-#interesting_main a:hover{
+#interesting_main a:hover, #newcomes_main a:hover, .all-books a:hover {
     transform: scale(1.05);
 }
