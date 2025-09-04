@@ -17,14 +17,14 @@ const datas = [
         title: "เลขยกกำลัง",
         description: "คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 4",
         subject_code: "ค31101",
-        image_path: "images/placeholder.png",
+        image_path: "images/Books/power.png",
         redirect_path: "https://rathcenter.com/old-web/Sheet/PowrNm.pdf",
     },
     {
         title: "จำนวนจริง",
         description: "คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 4",
         subject_code: "ค31101",
-        image_path: "images/placeholder.png",
+        image_path: "images/Books/realnumber.png",
         redirect_path: "https://rathcenter.com/old-web/Sheet/RealNm.pdf",
     },
     {
@@ -57,7 +57,7 @@ function addNewCard(container, { title, description, subject_code, image_path, r
         "h-[200px]"
     );
 
-    // img part
+    // image part
     const image_div = document.createElement("div");
     const image = document.createElement("img");
     image.classList.add("w-[100%]", "h-[85px]");
@@ -119,10 +119,4 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     swiper.update();
-
 });
-
-
-
-
-

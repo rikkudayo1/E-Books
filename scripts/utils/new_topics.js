@@ -31,7 +31,7 @@ const new_topics_data = [
         title: "แรงและการเคลื่อนที่",
         description: "ฟิสิกส์ชั้นมัธยมศึกษาตอนปลาย",
         subject_code: "ว31101",
-        image_path: "images/placeholder.png",
+        image_path: "images/Books/force.png",
         redirect_path: "http://www.krukird.com/L03_1_61.pdf",
     },
 ]
@@ -50,7 +50,7 @@ function addNewTopicsCard(container, { title, description, subject_code, image_p
         "h-[200px]"
     );
 
-    //img part
+    // image part
 
     const image_div = document.createElement("div");
     image_div.classList.add("relative");
@@ -118,6 +118,4 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     swiper.update();
-
 });
-
