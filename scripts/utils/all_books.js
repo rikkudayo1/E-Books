@@ -41,6 +41,20 @@ const math_datas = [
         image_path: "../../images/Books/trigo.png",
         redirect_path: "https://rathcenter.com/old-web/Sheet/TrgnRt.pdf",
     },
+    {
+        title: "เซต",
+        description: "คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 4",
+        subject_code: "ค31101",
+        image_path: "../../images/Books/set.png",
+        redirect_path: "https://rathcenter.com/old-web/Sheet/Set.pdf",
+    },
+    {
+        title: "เมทริกซ์",
+        description: "คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 4",
+        subject_code: "ค31101",
+        image_path: "../../images/Books/matrix.png",
+        redirect_path: "https://rathcenter.com/old-web/Sheet/Matrix.pdf",
+    },
 ]
 
 const sci_datas = [
