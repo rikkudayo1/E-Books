@@ -105,7 +105,7 @@ function addNewCard(container, { title, description, subject_code, image_path, r
     // image part
     const image_div = document.createElement("div");
     const image = document.createElement("img");
-    image.classList.add("w-[100%]", "h-[75px]");
+    image.classList.add("w-[100%]", "h-[85px]");
     image.src = image_path;
     image_div.appendChild(image);
 

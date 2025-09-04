@@ -1,31 +1,31 @@
 const new_topics_data = [
     {
-        title: "ตรรกศาสตร์",
-        description: "คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 4",
-        subject_code: "ค31101",
-        image_path: "images/placeholder.png",
-        redirect_path: "https://rathcenter.com/old-web/Sheet/Logic.pdf",
+        title: "ภาษาไทย",
+        description: "ข้อสอบภาษาไทย A-Level (2567)",
+        subject_code: "A-Level (พร้อมเฉลย)",
+        image_path: "../../images/Books/thai.png",
+        redirect_path: "https://drive.google.com/file/d/1XBmdSMLL4YJ0VAO8A7dUdpxiIT_0IKJJ/view",
     },
     {
-        title: "การให้เหตุผล",
-        description: "คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 4",
-        subject_code: "ค31101",
-        image_path: "images/placeholder.png",
-        redirect_path: "https://rathcenter.com/old-web/Sheet/Resnng.pdf",
+        title: "ภาษาอังกฤษ",
+        description: "ข้อสอบภาษาอังกฤษ A-Level (2567)",
+        subject_code: "A-Level (พร้อมเฉลย)",
+        image_path: "../../images/Books/english.png",
+        redirect_path: "https://drive.google.com/file/d/1TIvVtAgHGkMiNFOVs6W_3L7XWsyXW6lG/view",
     },
     {
-        title: "เลขยกกำลัง",
-        description: "คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 4",
-        subject_code: "ค31101",
-        image_path: "images/placeholder.png",
-        redirect_path: "https://rathcenter.com/old-web/Sheet/PowrNm.pdf",
+        title: "คณิตประยุกต์ 1",
+        description: "คณิตศาสตร์ประยุกต์ 1 A-Level (มีนาคม 2567)",
+        subject_code: "A-Level (เฉพาะข้อสอบ)",
+        image_path: "../../images/Books/math1.png",
+        redirect_path: "https://drive.google.com/file/d/1g5RcdIAlxqlS179q9cGLt1O7gT45SaVx/view",
     },
     {
-        title: "จำนวนจริง",
-        description: "คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 4",
-        subject_code: "ค31101",
-        image_path: "images/placeholder.png",
-        redirect_path: "https://rathcenter.com/old-web/Sheet/RealNm.pdf",
+        title: "PAT 1 (2558)",
+        description: "PAT 1 (ต.ค. 2558) มีเฉลยในไฟล์",
+        subject_code: "TPAT1",
+        image_path: "../../images/Books/PAT.png",
+        redirect_path: "https://rathcenter.com/old-web/Exam/Pat1/PAT15810.pdf",
     },
     {
         title: "แรงและการเคลื่อนที่",
@@ -55,7 +55,7 @@ function addNewTopicsCard(container, { title, description, subject_code, image_p
     const image_div = document.createElement("div");
     image_div.classList.add("relative");
     const image = document.createElement("img");
-    image.classList.add("w-[100%]", "h-[75px]");
+    image.classList.add("w-[100%]", "h-[85px]");
     image.src = image_path;
     const new_text = document.createElement("h1");
     new_text.classList.add("bg-red-400","text-white","inline-block","absolute","pl-1","pr-1");

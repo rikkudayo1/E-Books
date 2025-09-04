@@ -10,6 +10,6 @@
     font-style: normal;
 }
 
-#interesting_main a:hover, #newcomes_main a:hover, .all-books a:hover {
+#interesting_main a:hover, #newcomes_main a:hover, .all-books a:hover, .bodkwam a:hover {
     transform: scale(1.05);
 }

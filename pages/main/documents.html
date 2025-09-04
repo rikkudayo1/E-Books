@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRU E-Books - หนังสือทั้งหมด</title>
+    <title>CRU E-Books - บทความ</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="icon" type="image/png" href="../../images/crulogo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -22,9 +22,9 @@
             </div>
             <div class="hidden md:flex text-white justify-center items-center gap-4">
                 <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="../../index.html"><box-icon color="white" size="27px" name='home'></box-icon>หน้าหลัก</a>
-                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="#"><box-icon color="white" size="27px" name='test-tube'></box-icon>คลังหนังสือ</a>
+                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="../../pages/main/books.html"><box-icon color="white" size="27px" name='test-tube'></box-icon>คลังหนังสือ</a>
                 <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="../../pages/main/test.html"><box-icon color="white" size="27px" name='spreadsheet'></box-icon>เตรียมสอบ</a>
-                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="../../pages/main/documents.html"><box-icon color="white" size="27px" name='spreadsheet'></box-icon>บทความ</a>
+                <a class="p-3 hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="#"><box-icon color="white" size="27px" name='spreadsheet'></box-icon>บทความ</a>
             </div>
             <div id="nav-button" class="block md:hidden text-white flex justify-center items-center gap-5">
                 <box-icon color="white" size="30px" name='menu'></box-icon>
@@ -34,9 +34,9 @@
             <div class="p-3">
                 <div class="flex flex-col justify-center items-center text-white">
                     <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="../../index.html"><box-icon color="white" size="27px" name='home'></box-icon>หน้าหลัก</a>
-                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="#"><box-icon color="white" size="27px" name='test-tube'></box-icon>คลังหนังสือ</a>
+                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="../../pages/main/books.html"><box-icon color="white" size="27px" name='test-tube'></box-icon>คลังหนังสือ</a>
                     <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="../../pages/main/test.html"><box-icon color="white" size="27px" name='spreadsheet'></box-icon>เตรียมสอบ</a>
-                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="pages/main/documents.html"><box-icon color="white" size="27px" name='book-open'></box-icon>บทความ</a>
+                    <a class="p-3 w-[100%] hover:bg-orange-300 rounded-[7px] flex gap-2 justify-start items-center" href="#"><box-icon color="white" size="27px" name='book-open'></box-icon>บทความ</a>
                 </div>
                 <div class="flex justify-start items-center gap-2 mt-5 ml-2">
                     <a href=""><box-icon color="white" size="30px" type='logo' name='instagram-alt'></box-icon></a>
@@ -49,15 +49,24 @@
     </nav>
     <main class="mt-30 ml-3 mr-3 md:ml-36 md:mr-36 lg:ml-64 lg:mr-64 flex lg:justify-center lg:items-center flex-col">
         <div class="lg:shadow-[0px_0px_3px_2px_rgba(0,_0,_0,_0.1)] lg:bg-white lg:rounded-[10px] lg:p-7 lg:w-[900px]">
-            <h1 class="font-bold text-3xl mb-5">คณิตศาสตร์</h1>
+            <h1 class="font-bold text-3xl mb-5">บทความต่างๆ</h1>
             <div class="bg-orange-400 w-[100%] h-[4px] mb-7"></div>
-            <div id="math_div" class="all-books flex flex-wrap gap-3 justify-start items-center"></div>
-        </div>
-
-        <div class="mt-24 lg:shadow-[0px_0px_3px_2px_rgba(0,_0,_0,_0.1)] lg:bg-white lg:rounded-[10px] lg:p-7 lg:w-[900px]">
-            <h1 class="font-bold text-3xl mb-5">วิทยาศาสตร์</h1>
-            <div class="bg-orange-400 w-[100%] h-[4px] mb-7"></div>
-            <div id="sci_div" class="all-books flex flex-wrap gap-3 justify-start items-center"></div>
+            <div class="all-books flex flex-wrap gap-3 justify-start items-center">
+                <div class="flex flex-col shadow-[0px_0px_3px_2px_rgba(0,_0,_0,_0.1)] rounded-[10px]">
+                    <div class="p-5 max-w-[500px]">
+                        <img src="../../images/Banners/Math.png" class="rounded-[10px] w-[100%]" alt="">
+                        <div class="mt-4 flex flex-col">
+                            <h1 class="bg-blue-200 inline pl-1 pr-1 rounded-[4px] max-w-[70px] text-center">บทความ</h1>
+                            <h1 class="font-bold text-xl mt-2">สรุปทุกอย่างที่ต้องรู้ก่อนสอบ A-Level 68 คณิต 1</h1>
+                            <div class="flex justify-start items-center gap-1 mt-3">
+                                <box-icon color="black" size="24px" name="time-five"></box-icon>
+                                <h1>4 กันยายน 2568</h1>
+                            </div>
+                            <a class="bg-orange-400 p-3 mt-5 rounded-[5px] max-w-[95px] text-center" href="../sub/documents/ALevelMath.html">ดูเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -85,7 +94,6 @@
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="../../scripts/index.js"></script>
-    <script src="../../scripts/utils/all_books.js"></script>
     <script src="scripts/swipers/swiper.js"></script>
 </body>
 </html>

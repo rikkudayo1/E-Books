@@ -1,10 +1,55 @@
-const datas = [
+const pat_datas = [
     {
         title: "PAT 1 (2563)",
         description: "PAT 1 (ก.พ. 2563) มีเฉลยในไฟล์",
         subject_code: "TPAT1",
         image_path: "../../images/Books/PAT.png",
         redirect_path: "https://rathcenter.com/old-web/Exam/Pat1/PAT16302.pdf",
+    },
+    {
+        title: "PAT 1 (2562)",
+        description: "PAT 1 (ก.พ. 2562) มีเฉลยในไฟล์",
+        subject_code: "TPAT1",
+        image_path: "../../images/Books/PAT.png",
+        redirect_path: "https://rathcenter.com/old-web/Exam/Pat1/PAT16202.pdf",
+    },
+    {
+        title: "PAT 1 (2561)",
+        description: "PAT 1 (ก.พ. 2561) มีเฉลยในไฟล์",
+        subject_code: "TPAT1",
+        image_path: "../../images/Books/PAT.png",
+        redirect_path: "https://rathcenter.com/old-web/Exam/Pat1/PAT16102.pdf",
+    },
+    {
+        title: "PAT 1 (2560)",
+        description: "PAT 1 (มี.ค. 2560) มีเฉลยในไฟล์",
+        subject_code: "TPAT1",
+        image_path: "../../images/Books/PAT.png",
+        redirect_path: "https://rathcenter.com/old-web/Exam/Pat1/PAT15903.pdf",
+    },
+    {
+        title: "PAT 1 (2559)",
+        description: "PAT 1 (ต.ค. 2559) มีเฉลยในไฟล์",
+        subject_code: "TPAT1",
+        image_path: "../../images/Books/PAT.png",
+        redirect_path: "https://rathcenter.com/old-web/Exam/Pat1/PAT15910.pdf",
+    },
+    {
+        title: "PAT 1 (2558)",
+        description: "PAT 1 (ต.ค. 2558) มีเฉลยในไฟล์",
+        subject_code: "TPAT1",
+        image_path: "../../images/Books/PAT.png",
+        redirect_path: "https://rathcenter.com/old-web/Exam/Pat1/PAT15810.pdf",
+    },
+]
+
+const alevel_datas = [
+    {
+        title: "คณิตประยุกต์ 1",
+        description: "คณิตศาสตร์ประยุกต์ 1 A-Level (มีนาคม 2568)",
+        subject_code: "A-Level (เฉพาะข้อสอบ)",
+        image_path: "../../images/Books/math1.png",
+        redirect_path: "https://drive.google.com/file/d/1mSwBLAsVwtyYvCU6myIPWVdTD-63BpNZ/view",
     },
     {
         title: "คณิตประยุกต์ 2",
@@ -14,18 +59,11 @@ const datas = [
         redirect_path: "https://drive.google.com/file/d/1Sfn6mluWf3wVhptWuhseqqgUrGT5FavQ/view",
     },
     {
-        title: "เลขยกกำลัง",
-        description: "คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 4",
-        subject_code: "ค31101",
-        image_path: "images/placeholder.png",
-        redirect_path: "https://rathcenter.com/old-web/Sheet/PowrNm.pdf",
-    },
-    {
-        title: "จำนวนจริง",
-        description: "คณิตศาสตร์ชั้นมัธยมศึกษาปีที่ 4",
-        subject_code: "ค31101",
-        image_path: "images/placeholder.png",
-        redirect_path: "https://rathcenter.com/old-web/Sheet/RealNm.pdf",
+        title: "คณิตประยุกต์ 1",
+        description: "คณิตศาสตร์ประยุกต์ 1 A-Level (มีนาคม 2567)",
+        subject_code: "A-Level (เฉพาะข้อสอบ)",
+        image_path: "../../images/Books/math1.png",
+        redirect_path: "https://drive.google.com/file/d/1g5RcdIAlxqlS179q9cGLt1O7gT45SaVx/view",
     },
     {
         title: "ภาษาอังกฤษ",
@@ -43,7 +81,7 @@ const datas = [
     },
 ]
 
-function addNewCard(container, { title, description, subject_code, image_path, redirect_path }) {
+function addNewTestCard(container, { title, description, subject_code, image_path, redirect_path }) {
     const main_div = document.createElement("div");
     main_div.classList.add(
         "swiper-slide",
@@ -97,9 +135,11 @@ function addNewCard(container, { title, description, subject_code, image_path, r
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-    const main = document.getElementById("interesting_main");
+    const pat = document.getElementById("pat_div");
+    const a_level = document.getElementById("alevel_div");
 
-    datas.forEach(data => addNewCard(main, data));
+    pat_datas.forEach(data => addNewTestCard(pat, data));
+    alevel_datas.forEach(data => addNewTestCard(a_level, data));
 
     const swiper = new Swiper('.interestings-swiper', {
         direction: 'horizontal',
