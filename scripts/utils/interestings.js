@@ -3,7 +3,7 @@ const datas = [
         title: "PAT 1 (2563)",
         description: "PAT 1 (ก.พ. 2563) มีเฉลยในไฟล์",
         subject_code: "TPAT1",
-        image_path: "../images/Books/PAT.png",
+        image_path: "../../images/Books/PAT.PNG",
         redirect_path: "https://rathcenter.com/old-web/Exam/Pat1/PAT16302.pdf",
     },
     {
@@ -121,3 +121,4 @@ window.addEventListener("DOMContentLoaded", () => {
     swiper.update();
 
 });
+
