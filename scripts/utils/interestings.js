@@ -10,7 +10,7 @@ const datas = [
         title: "คณิตประยุกต์ 2",
         description: "คณิตศาสตร์ประยุกต์ 2 A-Level (มีนาคม 2568)",
         subject_code: "A-Level (เฉพาะข้อสอบ)",
-        image_path: "../../images/Books/math2.png",
+        image_path: "images/Books/math2.png",
         redirect_path: "https://drive.google.com/file/d/1Sfn6mluWf3wVhptWuhseqqgUrGT5FavQ/view",
     },
     {
@@ -31,14 +31,14 @@ const datas = [
         title: "ภาษาอังกฤษ",
         description: "ข้อสอบภาษาอังกฤษ A-Level (2567)",
         subject_code: "A-Level (พร้อมเฉลย)",
-        image_path: "../../images/Books/english.png",
+        image_path: "images/Books/english.png",
         redirect_path: "https://drive.google.com/file/d/1TIvVtAgHGkMiNFOVs6W_3L7XWsyXW6lG/view",
     },
     {
         title: "ภาษาไทย",
         description: "ข้อสอบภาษาไทย A-Level (2567)",
         subject_code: "A-Level (พร้อมเฉลย)",
-        image_path: "../../images/Books/thai.png",
+        image_path: "images/Books/thai.png",
         redirect_path: "https://drive.google.com/file/d/1XBmdSMLL4YJ0VAO8A7dUdpxiIT_0IKJJ/view",
     },
 ]
@@ -121,6 +121,7 @@ window.addEventListener("DOMContentLoaded", () => {
     swiper.update();
 
 });
+
 
 
 
