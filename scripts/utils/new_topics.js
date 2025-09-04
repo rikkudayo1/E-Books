@@ -3,28 +3,28 @@ const new_topics_data = [
         title: "ภาษาไทย",
         description: "ข้อสอบภาษาไทย A-Level (2567)",
         subject_code: "A-Level (พร้อมเฉลย)",
-        image_path: "../../images/Books/thai.png",
+        image_path: "images/Books/thai.png",
         redirect_path: "https://drive.google.com/file/d/1XBmdSMLL4YJ0VAO8A7dUdpxiIT_0IKJJ/view",
     },
     {
         title: "ภาษาอังกฤษ",
         description: "ข้อสอบภาษาอังกฤษ A-Level (2567)",
         subject_code: "A-Level (พร้อมเฉลย)",
-        image_path: "../../images/Books/english.png",
+        image_path: "images/Books/english.png",
         redirect_path: "https://drive.google.com/file/d/1TIvVtAgHGkMiNFOVs6W_3L7XWsyXW6lG/view",
     },
     {
         title: "คณิตประยุกต์ 1",
         description: "คณิตศาสตร์ประยุกต์ 1 A-Level (มีนาคม 2567)",
         subject_code: "A-Level (เฉพาะข้อสอบ)",
-        image_path: "../../images/Books/math1.png",
+        image_path: "images/Books/math1.png",
         redirect_path: "https://drive.google.com/file/d/1g5RcdIAlxqlS179q9cGLt1O7gT45SaVx/view",
     },
     {
         title: "PAT 1 (2558)",
         description: "PAT 1 (ต.ค. 2558) มีเฉลยในไฟล์",
         subject_code: "TPAT1",
-        image_path: "../../images/Books/PAT.png",
+        image_path: "images/Books/PAT.png",
         redirect_path: "https://rathcenter.com/old-web/Exam/Pat1/PAT15810.pdf",
     },
     {
@@ -118,4 +118,5 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     swiper.update();
+
 });
