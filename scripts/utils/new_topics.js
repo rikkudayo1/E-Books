@@ -50,7 +50,7 @@ function addNewTopicsCard(container, { title, description, subject_code, image_p
         "h-[200px]"
     );
 
-    // image part
+    //img part
 
     const image_div = document.createElement("div");
     image_div.classList.add("relative");
@@ -120,3 +120,4 @@ window.addEventListener("DOMContentLoaded", () => {
     swiper.update();
 
 });
+
