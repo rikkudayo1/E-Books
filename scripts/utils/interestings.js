@@ -57,7 +57,7 @@ function addNewCard(container, { title, description, subject_code, image_path, r
         "h-[200px]"
     );
 
-    // image part
+    // img part
     const image_div = document.createElement("div");
     const image = document.createElement("img");
     image.classList.add("w-[100%]", "h-[85px]");
@@ -121,6 +121,7 @@ window.addEventListener("DOMContentLoaded", () => {
     swiper.update();
 
 });
+
 
 
 
